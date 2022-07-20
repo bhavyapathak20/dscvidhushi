@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:"Poppins",sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  position: relative;
+  text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.back{
+  background-image: url(bg.jpeg);
+  width:100%;
+  height:100vh;
+  background-size: cover;
+  z-index: -1;
+}
+.back .overlay{
+  background: #171819;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+  background-position: center;
+}
+.mid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+.mid p{
+  color:#7f8c8d;
+  font-size: 1.3rem;
+  margin-bottom: 1.4rem;
+}
+.mid h2{
+  color: #fff;
+  font-size: 3rem;
+}
+.mid .btn{
+  margin-top: 2rem;
+}
+.mid .btn a{
+text-decoration: none;
+text-transform: uppercase;
+}
+.mid .btn a.simple{
+color: #fff;
+font-weight: 500;
+padding: 0.9rem 1.6rem;
+}
+.mid .btn a.simple:hover{
+color:#ff5733;
+}
+.mid .btn a.border:hover{
+background: #fff;
+border:1px solid white;
+}
+.mid .btn a.border{
+color: #ff5733;
+border: 1px solid #ff5733;
+font-weight: 500;
+padding: 0.9rem 1.6rem;
+border-radius:3px;
+}
+.details{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 8rem 15rem;
+  background: #171819;
+}
+.details h3,h6,h5{
+  color: #fff;
+}
+.details .one{
+  width:45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.details .one h3{
+  font-size: 2.5rem;
+  padding-bottom: 1.1rem;
+}
+.details .one h6{
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+}
+.details .one p{
+  color: #666262;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+.details .one a{
+  color:#fff;
+  background: #f13a11;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.details .one a:hover{
+  background-color: #fff;
+  color: #f13a11;
+}
+.details .two{
+  width:45%;
+  border-left: 1px solid #666262;
+  padding-left: 4rem;
+}
+#bar{
+  color:#ff5733;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  display: none;
+}
+.details .two h3{
+  font-size: 2.5rem;
+}
+.details .two h5{
+  font-size: 1.1rem;
+}
+.details .two p{
+  font-size: 1.1rem;
+  color:#666262;
+  margin-bottom: 0.8rem;
+}
+@media screen and (max-width:1024px){
+  .nav{
+    padding: 1rem 4.5rem;
+  }
+  .nav h2{
+    font-size: 1.4rem;
+  }
+  #item li{
+    padding-right: 30px;
+  }
+  #item li a{
+    font-size: 0.9rem;
+  }
+  #item .icon i{
+    padding-right: 20px;
+  }
+}
+  @media screen and (max-width:991px){
+
+    #item{    text-align: center;
+       flex-direction: column;
+     width:300px;
+   height: 80vh;
+ position: fixed;
+top:0;
+right:-300px;
+background: rgba(0,0,0,0.8);
+z-index: 100000;
+margin-top: 4.2rem;
+transition: 0.5s;}
+    #item li{
+      padding-right: 0;
+      padding: 4px 0;
+    }
+    #item li a{
+      font-size: 1.2rem;
+    }
+    #item .icon{
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    #item .icon i{
+      padding: 0 15px 0 15px;
+    }
+    #bar{
+      display: initial;
+    }
+    .mid p{
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+    }
+    .mid h2{
+      font-size: 2.5rem;
+    }
+    .mid .btn{
+      margin-top: 1.5rem;
+    }
+    .mid .btn a{
+    font-size: 0.9rem;
+    }
+    .mid .btn a.simple{
+    padding: 0.7rem 1.4rem;
+    }
+
+    .mid .btn a.border{
+    padding: 0.7rem 1.4rem;
+    }
+    .details{
+      padding: 6rem 7rem;
+    }
+
+    .details .one{
+      width:50%;
+    }
+    .details .one h3{
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    .details .one p{
+      font-size: 1.1rem;
+      padding-bottom: 2.2rem;
+    }
+    .details .one a{
+  font-size: 0.9rem;
+    }
+    .details .two{
+      padding-left: 3.5rem;
+    }
+    .details .two h3{
+      font-size: 2rem;
+    }
+    .details .two h5{
+      font-size: 1rem;
+    }
+    .details .two p{
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+    @media screen and (max-width:768px){
+      .back{
+        background-position: center;
+      }
+      .mid p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .mid h2{
+        font-size: 2.1rem;
+      }
+      .mid .btn{
+        margin-top: 1.5rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .mid .btn a.simple{
+      padding: 0.7rem 1.4rem;
+      margin-bottom: 7px;
+      }
+
+      .mid .btn a.border{
+      padding: 0.7rem 1.4rem;
+      }
+      .details{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .details .one{
+        width:70%;
+      }
+
+      .details .one a{
+    font-size: 1rem;
+      }
+      .details .two{
+        padding-left: 0;
+        border-left: 0;
+        border-top:1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+      }
+
+    }
+      @media screen and (max-width:496px){
+        .mid p{
+          margin-bottom: 0.8rem;
+        }
+        .mid h2{
+          font-size: 1.8rem;
+        }
+        .mid .btn{
+          margin-top: 0.7rem;
+
+        }
+        .details{
+          padding: 4rem 1rem;
+        }
+
+        .details .one{
+          width:100%;
+        }
+
+        .details .two{
+
+          width: 100%;
+
+        }
+      }
+
+
+
+
+/*Shrinking for mobile*/
+@media (max-width: 769px) {
+
+}
+.navigation {
+    height: 55px;
+}
+.brand {
+    position: absolute;
+    left: 50px;
+    padding-left: 10px;
+    line-height: 55px;  
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+.brand a {
+    color:white;
+    text-decoration: none;
+}
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 55px;
+    color:#ff5733;
+    text-decoration: none;
+}
+nav ul li a{
+    background: transparent;
+    color:white;
+}
+nav ul li a:hover {
+    color:#ff5733;
+}
+.navbar-dropdown li a{
+    background: #2581DC;
+}
+nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' \025BE';
+}
+nav ul li ul li {
+    min-width: 190px;
+}
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    height: 55px;
+    width: 70px;
+}
+
+@media only screen and (max-width: 800px){
+    .nav-mobile {
+        display: block;
+   }
+    nav {
+        width: 100%;
+        padding: 55px 0 15px;
+   }
+    nav ul {
+        display: none;
+   }
+    nav ul li {
+        float: none;
+   }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        background: #262626;
+   }
+    nav ul li ul li a {
+        padding-left: 30px;
+   }
+}
+
+@media screen and (min-width:800px) {
+    .nav-list {
+        display: block !important;
+   }
+}
+
+#navbar-toggle {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+#navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 30px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+#navbar-toggle span:before {
+    top: -10px;
+}
+#navbar-toggle span:after {
+    bottom: -10px;
+}
+#navbar-toggle.active span {
+    background-color: transparent;
+}
+#navbar-toggle.active span:before, #navbar-toggle.active span:after {
+    top: 0;
+}
+#navbar-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#navbar-toggle.active span:after {
+    transform: rotate(-45deg);
+}
